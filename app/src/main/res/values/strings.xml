@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">iSecure</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="onAirhelp">Helpline</string>
+    <string name="police_number">Police Number</string>
+    <string name="advocate">Advocate</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Profile">Profile</string>
+    <string name="Guideline">Guideline</string>
+    <string name="ChatRome">ChatRome</string>
+    <string name="Emergency">Emergency</string>
+    <string name="How_to_use">How to Use</string>
+    <string name="aboutus">About US</string>
+
+    <string name="title">Users</string>
+    <string name="plus">"+"</string>
+    <string name="adduser">"Add User"</string>
+    <string name="user">"User"</string>
+    <string name="hint">"Enter User's Name"</string>
+    <string name="save">"Save"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="adduseractivitylabel" translatable="false">"Add User Activity"</string>
+
+    <string name="string_enter_name">Enter your name</string>
+    <string name="string_choose_username">Choose your username</string>
+    <string name="string_choose_password">Choose your password</string>
+    <string name="string_enter_email">Enter your email</string>
+    <string name="button_register">Register</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_con_password">Confirm Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+
+    <string name="Add_New">Add New</string>
+    <string name="edit">Edit Contact</string>
+    <string name="delete">Delete Contact</string>
+    <string name="title_activity_display_contact">DisplayContact</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="street">Street</string>
+    <string name="country">City/State/Zip</string>
+
+    <string name="deleteContact">Are you sure, you want to delete it.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="title_activity_new__profile">New_Profile</string>
+    <string name="title_activity_profile__show">Profile_Show</string>
+    <string name="title_activity_profile_edit" translatable="false">ProfileEditActivity</string>
+    <string name="Logout">Logout</string>
+
+
+    <string name="Emergency_service">Emergency Service</string>
+    <string name="Wemens_Right">Wemens Right</string>
+    <string name="Wemens_Law">Wemens Law</string>
+    <string name="Profile_navi">Profile</string>
+    <string name="Emergency_Number">Emergency Number</string>
+
+    <string name="Police">Police</string>
+    <string name="RAB">RAB</string>
+    <string name="Media">Media</string>
+    <string name="Wemen_Organization">Wemen Organization</string>
+    <string name="Advocate">Advocate</string>
+    <string name="Ambulence">Ambulence</string>
+    <string name="Fire_Service">Fire Service</string>
+
+
+    <string name="Emergency_map">Emergency Map</string>
+
+    <string name="Ladies_Toilet">Ladies Toilet</string>
+    <string name="Danger_Zone">Danger Zone</string>
+    <string name="Police_Station">Police Station</string>
+    <string name="Hospital">Hospital</string>
+    <string name="Womens_Organigation">Womens Organigation</string>
+    <string name="Court">Court</string>
+    <string name="App_User">App User</string>
+    <string name="Language_select_title">Language Settings</string>
+    <string name="Cyber_laws">Cyber Laws</string>
+    <string name="womens_organization">Womens Organization</string>
+    <string name="fire_service">Fire Service</string>
+    <string name="Minster_office">Minster Office</string>
+    <string name="media">Media</string>
+
+
+    <string name="Air_Help">Air Help</string>
+
+    <string name="Tools">Tools</string>
+    <string name="Application">Application</string>
+    <string name="Friends">Friends</string>
+
+    <string name="Community">Community</string>
+    <string name="Community_sub">Community</string>
+    <string name="Chat_Room">Chat Room</string>
+    <string name="Wemen_Organization_2">Wemen Organization</string>
+
+    <string name="We_Can">WE CAN</string>
+    <string name="Help_Feedback">Help &amp; Feedback</string>
+    <string name="About_Us">About Us</string>
+    <string name="btn_link_to_Skip">Continue Without Registration</string>
+
+
+    <string name="Remember_me">Remember Me</string>
+    <string name="Forgot_Password">Forgot Password</string>
+    <string name="Phone_Number">Phone Number</string>
+    <string name="Button_click_Only">Button click Only</string>
+    <string name="Shake_Only">Shake Only</string>
+    <string name="Set_frequency">Set frequency for SMS and email alerts</string>
+    <string name="Either_Button_Click_and_Sheck">Either Button Click and Sheck</string>
+    <string name="trigger_an_alert">How would you like to trigger an alert?</string>
+    <string name="hint_put_the_phone">Put the phone down on flat surface, and tap Start Timer</string>
+    <string name="hint_large_enter">Enter contact details and tap to add the person as an emergency contact SMS and email message will automatically be sent to these contacts.</string>
+    <string name="high_often">High (More often)</string>
+    <string name="les_often">Low (Less Often)</string>
+    <string name="hint_emergency_4">Please enter your Gmail credentials. The app will use these details to send email to your emergency email contacts, when triggered.</string>
+    <string name="Password">Password</string>
+    <string name="warning_enter_em4">If you do not enter the gmail credentials, emails will NOT be sent when you are in an emergency.</string>
+    <string name="stay_safe">Stay Safe</string>
+    <string name="user_name_pro" translatable="false">Sultana Aman</string>
+    <string name="Stop">Stop</string>
+    <string name="working_status" translatable="false">Wemen Health Organization, Asiistance Profesor of DMC</string>
+    <string name="total_conectivity">Connectivity 1765 People</string>
+    <string name="Record">Record</string>
+    <string name="Play">play</string>
+    <string name="Home">Home</string>
+    <string name="Womens_Right">Women Rights</string>
+    <string name="Womens_laws">Womens Laws</string>
+    <string name="Tool">Tools</string>
+    <string name="Community_2">Community</string>
+    <string name="WomenOrganization">Women Organization</string>
+    <string name="Preferences">Preferences</string>
+    <string name="Delete">Delete</string>
+    <string name="Share">Share</string>
+    <string name="Search">Search</string>
+    <string name="Save">Save</string>
+    <string name="BookMark">Bookmark</string>
+    <string name="Option">Option</string>
+
+
+    <string name="Category"> Cat</string>
+    <string name="spinner_title">Sprin</string>
+
+
+    <!--Start 3.00pm -->
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last Update Time</string>
+    <string name="start_updates">Start Updates</string>
+    <string name="stop_updates">Stop Updates</string>
+    <string name="location_updated_message">Location updated</string>
+    <!--End 3.00pm -->
+
+
+    <string name="title_activity_maps">Welcome!</string>
+
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Don\'t have account? Sign Up</string>
+    <string name="title_activity_maps1">Map</string>
+
+
+</resources>

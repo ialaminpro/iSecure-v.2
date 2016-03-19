@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thealamin.isecure.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/blur_img_bg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".app.MainActivity"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+
+        <!--<include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            android:layout_height="50dp"
+            android:layout_width="match_parent" />-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+            <!--
+            <include layout="@layout/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="352dp"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:id="@+id/linearLayout2"
+                android:layout_alignParentTop="true">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+
+            android:id="@+id/linearLayout3"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:foreground="@android:color/transparent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/voicerecord1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/record"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="60dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:onClick="voicerecord_exit"
+                    android:layout_alignTop="@+id/imageButton11"
+                    android:layout_alignLeft="@+id/imageButton7"
+                    android:layout_alignStart="@+id/imageButton7"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btdog"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/dog"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="60dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/sms"
+                    android:layout_alignStart="@+id/sms"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton13"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/police"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="60dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_alignTop="@+id/imageButton12"
+                    android:layout_toRightOf="@+id/Emergency"
+                    android:layout_toEndOf="@+id/Emergency"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Emergency"
+            android:onClick="doSomething"
+            android:src="@drawable/circle_red"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:maxWidth="150dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitCenter"
+            android:longClickable="false"
+            android:layout_below="@+id/call"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/call"
+            android:background="@android:color/transparent"
+            android:src="@drawable/call"
+            android:adjustViewBounds="true"
+            android:maxWidth="60dp"
+            android:maxHeight="60dp"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+            android:foregroundGravity="top|center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/voicerecord"
+            android:background="@android:color/transparent"
+            android:src="@drawable/voicerecord"
+            android:adjustViewBounds="true"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/call"
+            android:layout_alignLeft="@+id/sms"
+            android:layout_alignStart="@+id/sms"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cameraPic"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera"
+            android:adjustViewBounds="true"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/call"
+            android:layout_toRightOf="@+id/Emergency"
+            android:layout_toEndOf="@+id/Emergency"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sms"
+            android:background="@android:color/transparent"
+            android:src="@drawable/sms"
+            android:adjustViewBounds="true"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:layout_alignBottom="@+id/Emergency"
+            android:layout_toLeftOf="@+id/Emergency"
+            android:layout_toStartOf="@+id/Emergency"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video"
+            android:background="@android:color/transparent"
+            android:src="@drawable/video"
+            android:adjustViewBounds="true"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:layout_alignTop="@+id/sms"
+            android:layout_alignLeft="@+id/cameraPic"
+            android:layout_alignStart="@+id/cameraPic"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/police"
+            android:background="@android:color/transparent"
+            android:src="@drawable/police"
+            android:adjustViewBounds="true"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+            android:layout_below="@+id/Emergency"
+            android:layout_alignLeft="@+id/call"
+            android:layout_alignStart="@+id/call" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

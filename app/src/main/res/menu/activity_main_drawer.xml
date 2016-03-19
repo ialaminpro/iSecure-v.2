@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Emergency_service"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/Emergency_service" />
+
+        <item
+            android:id="@+id/Womens_Right"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/Womens_Right" />
+        <item
+            android:id="@+id/Womens_laws"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/Womens_laws" />
+        <item
+            android:id="@+id/Cyber_laws"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/Cyber_laws" />
+        <item
+            android:id="@+id/onAirhelp"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/onAirhelp" />
+        <item
+            android:id="@+id/Emergency_Number"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/onAirhelp"
+            android:visible="false"/>
+
+    </group>
+    <!--24/03/2016-->
+    <item android:title="@string/Emergency_Number">
+        <menu>
+            <item
+                android:id="@+id/police"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/police_number" />
+            <item
+                android:id="@+id/Advocate"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/advocate" />
+            <item
+                android:id="@+id/womens_organization"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/womens_organization" />
+            <item
+                android:id="@+id/Ambulance"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Ambulence" />
+            <item
+                android:id="@+id/fire_service"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/fire_service" />
+            <item
+                android:id="@+id/minster_office"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Minster_office" />
+            <item
+                android:id="@+id/media"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/media" />
+        </menu>
+    </item>
+    <!--24/03/2016-->
+
+    <item android:title="@string/Emergency_map">
+        <menu>
+            <item
+                android:id="@+id/Ladies_Toilet"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Ladies_Toilet" />
+            <item
+                android:id="@+id/Danger_Zone"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/Danger_Zone" />
+            <item
+                android:id="@+id/Police_Station"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/Police_Station" />
+            <item
+                android:id="@+id/Hospital_view"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/Hospital" />
+            <item
+                android:id="@+id/Womens_Organigation_view"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/Womens_Organigation" />
+            <item
+                android:id="@+id/Court_view"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/Court" />
+
+            <item
+                android:id="@+id/App_User"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/App_User" />
+        </menu>
+    </item>
+
+    <item android:title="@string/Language_select_title">
+        <menu>
+
+            <item
+                android:id="@+id/language_bangla_select"
+                android:icon="@drawable/ic_menu_share"
+                android:title="বাংলা"
+                />
+            <item
+                android:id="@+id/language_english_select"
+                android:icon="@drawable/ic_menu_share"
+                android:title="English" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Tools_view"
+        android:icon="@drawable/ic_menu_camera"
+        android:title="@string/Tools"
+        android:visible="false"/>
+
+
+    <item android:title="@string/Community">
+        <menu>
+            <item
+                android:id="@+id/Community_view"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Community" />
+            <item
+                android:id="@+id/Chat_Room"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Chat_Room" />
+            <item
+                android:id="@+id/Womens_Organigation_community"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/Womens_Organigation" />
+
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/We_Can"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/We_Can" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Help_Feedback"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/Help_Feedback" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/About_Us"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/About_Us" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thealamin.isecure.HospitalView"
+    tools:showIn="@layout/app_bar_main_hospital">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:background="#fbfafa"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Find for a place"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f8fdf6f6"
+            android:layout_marginLeft="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView21"
+                    android:src="@drawable/hospital_pic"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="LabAid Hospital"
+                    android:id="@+id/textView36"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView21"
+                    android:layout_toEndOf="@+id/imageView21" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2km"
+                    android:id="@+id/textView37"
+                    android:textStyle="italic"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ph- 0276898"
+                    android:id="@+id/textView38"
+                    android:layout_below="@+id/textView36"
+                    android:layout_alignLeft="@+id/textView36"
+                    android:layout_alignStart="@+id/textView36"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton29"
+                    android:src="@drawable/call"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="40dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_below="@+id/textView37"
+                    android:layout_toLeftOf="@+id/textView37"
+                    android:layout_toStartOf="@+id/textView37" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f8fdf6f6"
+            android:layout_marginLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView22"
+                    android:src="@drawable/hospital_pic"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="LabAid Hospital"
+                    android:id="@+id/textView39"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView22"
+                    android:layout_toEndOf="@+id/imageView22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2km"
+                    android:id="@+id/textView40"
+                    android:textStyle="italic"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ph- 0276898"
+                    android:id="@+id/textView41"
+                    android:layout_below="@+id/textView39"
+                    android:layout_alignLeft="@+id/textView39"
+                    android:layout_alignStart="@+id/textView39"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton30"
+                    android:src="@drawable/call"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="40dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_below="@+id/textView40"
+                    android:layout_toLeftOf="@+id/textView40"
+                    android:layout_toStartOf="@+id/textView40" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f8fdf6f6"
+            android:layout_marginLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView23"
+                    android:src="@drawable/hospital_pic"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="LabAid Hospital"
+                    android:id="@+id/textView42"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView23"
+                    android:layout_toEndOf="@+id/imageView23" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2km"
+                    android:id="@+id/textView43"
+                    android:textStyle="italic"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ph- 0276898"
+                    android:id="@+id/textView44"
+                    android:layout_below="@+id/textView42"
+                    android:layout_alignLeft="@+id/textView42"
+                    android:layout_alignStart="@+id/textView42"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton31"
+                    android:src="@drawable/call"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="40dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_below="@+id/textView43"
+                    android:layout_toLeftOf="@+id/textView43"
+                    android:layout_toStartOf="@+id/textView43" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f8fdf6f6"
+            android:layout_marginLeft="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView24"
+                    android:src="@drawable/hospital_pic"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="LabAid Hospital"
+                    android:id="@+id/textView45"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageView24"
+                    android:layout_toEndOf="@+id/imageView24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2km"
+                    android:id="@+id/textView46"
+                    android:textStyle="italic"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ph- 0276898"
+                    android:id="@+id/textView47"
+                    android:layout_below="@+id/textView45"
+                    android:layout_alignLeft="@+id/textView45"
+                    android:layout_alignStart="@+id/textView45"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton32"
+                    android:src="@drawable/call"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="40dp"
+                    android:maxHeight="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_below="@+id/textView46"
+                    android:layout_toLeftOf="@+id/textView46"
+                    android:layout_toStartOf="@+id/textView46" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:id="@+id/imageView17"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hospital"
+                android:adjustViewBounds="true"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

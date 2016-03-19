@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thealamin.isecure.CyberLaws"
+    tools:showIn="@layout/app_bar_main_cyber_laws"
+    android:background="@drawable/blur_img_bg">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView5">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView48"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="নারী অধিকার ও কয়েকটি আইন বইয়ে লেখক বাংলাদেশের নারী অধিকার ও এর স্বরূপ, নারী অধিকার সংক্রান্ত আন্তর্জাতিক বিভিন্ন চুক্তি এবং বাংলাদেশে প্রচলিত পারিবারিক আইনের বিধান অনুযায়ী বিদ্যমান নারীর অধিকার ও অবস্থান বিষয়ে আলোকপাত করেছেন। এছাড়া মুসলিম পারিবারিক আইন অধ্যাদেশ ১৯৬১, পারিবারিক আদালত অধ্যাদেশ ১৯৮৫, নারী ও শিশু নির্যাতন দমন আইন ২০০০, যৌতুক নিরোধ আইন ১৯৮০, এসিড অপরাধ নিয়ন্ত্রণ আইন ২০০২ সম্পর্কেও সংক্ষিপ্তভাবে আলোচনা করা হয়েছে। এ সকল আইনে নারীর প্রতি সহিংস আচরণ করা হলে নারী আইনগতভাবে কী প্রতিকার পেতে পারে সে সম্পর্কে সহজবোধ্য ভাষায় আলোচনা করা হয়েছে। এ বইয়ে পাঠক বিবাহ, তালাক, বিশেষ বিবাহ আইন, বহুবিবাহ, অভিভাবকত্ব, ভরণপোষণ, দেনমোহর, সম্পত্তিতে নারীর অধিকার ও দত্তক গ্রহণ ইত্যাদি বিষয়ে বিভিন্ন ধর্মাবলম্বীদের মধ্যে নারীর অবস্থান সম্পর্কে একটি তুলনামূলক ধারণা লাভ করতে সমর্থ হবেন।
+
+    "/></ScrollView>
+</LinearLayout>
+</RelativeLayout>

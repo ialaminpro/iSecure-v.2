@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:background="@color/ColorPrimary"
+    android:id="@+id/header_layout_comunity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/back_button"
+            android:src="@drawable/bck_btn_blk"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/isecure_logo"
+            android:src="@drawable/logo"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_weight="0.87" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dropdown_button"
+
+            android:src="@drawable/menu_alt"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</LinearLayout>
