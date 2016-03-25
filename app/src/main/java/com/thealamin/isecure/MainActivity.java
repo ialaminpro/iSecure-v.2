@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.io.IOException;
 import java.util.Locale;
 
-public class MainActivity extends Nav{
+public class MainActivity extends navMain{
 
     ImageButton bta, btcall, btvr, btsms, bte, btv, btg,btdog;
 
@@ -44,6 +44,7 @@ public class MainActivity extends Nav{
 
         setContentView(R.layout.activity_main);
         mp1 = MediaPlayer.create(MainActivity.this,R.raw.dogwhistle2);
+
 
 
          /*  username_to_show = (TextView) findViewById(R.id.username_to_nav_profile);
@@ -281,13 +282,9 @@ public class MainActivity extends Nav{
 
     @Override
     public void onBackPressed() {
-        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }*/
+        //Display alert message when back button has been pressed
         backButtonHandler();
+        return;
     }
 
     public void backButtonHandler() {
@@ -318,6 +315,9 @@ public class MainActivity extends Nav{
         alertDialog.show();
     }
 
+
+
+
     public void voicerecord_exit(View view){
 
         Intent i = new Intent(MainActivity.this,logoutsplash.class);
@@ -325,8 +325,6 @@ public class MainActivity extends Nav{
 
         finish();
     }
-
-
 
 
 

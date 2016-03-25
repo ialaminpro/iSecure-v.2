@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -54,18 +55,12 @@ public class Nav extends AppCompatActivity implements NavigationView.OnNavigatio
             startActivity(refresh);
             finish();
 
-        } else if (id == R.id.Womens_laws) {
-            Intent refresh = new Intent(this, WomenLaws.class);
+        } else if (id == R.id.laws_rights) {
+            Intent refresh = new Intent(this, RightsandLaws.class);
             startActivity(refresh);
             finish();
 
-        } else if (id == R.id.Cyber_laws) {
-            Intent refresh = new Intent(this, CyberLaws.class);
-            startActivity(refresh);
-            finish();
-
-
-        } else if (id == R.id.onAirhelp) {
+        }  else if (id == R.id.onAirhelp) {
             Intent refresh = new Intent(this, Call.class);
             startActivity(refresh);
             finish();
@@ -255,13 +250,16 @@ public class Nav extends AppCompatActivity implements NavigationView.OnNavigatio
             super.onBackPressed();
         }*/
         backButtonHandler();
+        return;
     }
 
     public void backButtonHandler() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(
                 this);
-        startActivity(new Intent(this, MainActivity.class));
 
+        Intent refresh = new Intent(this, MainActivity.class);
+        startActivity(refresh);
+        this.finish(); //
 
     }
 
@@ -280,9 +278,19 @@ public class Nav extends AppCompatActivity implements NavigationView.OnNavigatio
                 startActivity(new Intent(this, Addphone.class));
                 //Toast.makeText(getApplicationContext(), "Item 1 Selected", Toast.LENGTH_LONG).show();
                 return true;
-           /* case R.id.item2:
-                Toast.makeText(getApplicationContext(),"Item 2 Selected",Toast.LENGTH_LONG).show();
+            case R.id.logout:
+
+                Toast.makeText(this, "Loged Out...", Toast.LENGTH_SHORT).show();
+                SharedPreferences savedata = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editdata = savedata.edit();
+                editdata.putString("islogin", "N/A");
+                editdata.commit();
+                Intent i = new Intent(this,RegistrationLogin.class);
+                startActivity(i);
+                finish();
+
                 return true;
+            /*
             case R.id.item3:
                 Toast.makeText(getApplicationContext(),"Item 3 Selected",Toast.LENGTH_LONG).show();
                 return true;*/

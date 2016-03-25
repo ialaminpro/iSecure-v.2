@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Women's Rights and Laws</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scriptu.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand" href="index.html"><img src="img/icon.png" alt="Mountain View" style="width:75px;height:42px; margin:0px; padding-bottom:10px;padding-top:2px;"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Law relating to women’s right</a></li>
+                  <li class=""><a href="index1.html">Women’s Right under Muslim Law</a></li>
+                  <li class=""><a href="index2.html">Women’s Right under Hindu Law</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div id="routine" class="container-fluid">
+      <div class="row txt-center">
+         <h4 id="dayname" class="column-title"><b>Women’s Right under Muslim Law</b></h4>
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div id="div1" class="panel panel-default">
+               <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                     <a  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <p id="class1" style="color:black">Women’s Right under Muslim Law </p>
+                     </a>
+                  </h4>
+               </div>
+               <div style="height: 0px;" aria-expanded="false" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                     <p class="details" id="details1"> The purpose of women, according to the Quran, is to compliment men. Women’s rights to employment and participation in public life, freedom of movement and freedom of organization, are severely restricted through a combination of the Shari’a principles of qawam (men’s guardianship over women),[8] hijab (the veil) and segregation between men and women. Examples of women’s inequality can be found in the administration of justice and in certain aspects of family law. A woman’s judicial testimony is deemed to be of half the value of that of a man, in civil cases, and is not accepted at all in serious criminal cases.[9] In certain types of wrongful homicide, monetary compensation paid to the heirs of a female victim is less than that paid to the heirs of a male victim and a woman’s share in inheritance is half that of a man’s. Additionally, no woman may hold any public office which involves exercising authority over men.
+                        The status of women in Islam is complicated by the fact that scholarly interpretation of the Qur’an may have been subject to the biases of those who stood to benefit by a society that favored their gender. Women played no part in interpretation of the Qur’an, and their absence “has been mistakenly equated with voiceless ness in the text itself.”[12] Furthermore, social norms in many male-dominated countries may have obscured many of the original purposes of the Qur’anic legislation. Former Prime Minister of Pakistan, Benazir Bhutto, claims that the subjugation of women in Islam “has got nothing to do with the religion, but it has got very much to do with material or man-made considerations.”
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="div2" class="panel panel-default" >
+               <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p id="class2" style="color:black">Status of Women under Marriage</p>
+                     </a>
+                  </h4>
+               </div>
+               <div aria-expanded="false" id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                     <p class="details" id="details2">The word ‘Nikah’ has been used in two senses in Muslim law, i.e. marriage and sexual contact. Muslim marriage has been considered a ceremony for a man to be united with a woman to enjoy their life together and to produce children. Though it can be said that Muslim law in all its egalitarian principles confers upon women equal status is also interpreted in various other ways. Though it was always felt that the man must marry himself to a woman of equal status, there was no such provision for the women that a woman must marry herself to a man of equal status. Rather it was always considered that a man, on marriage with a woman of lower status, would simply elevate her position to his own position. This concept of equality between the two parties to a Muslim marriage was traditionally known as kafa’a. The idea of faskh demonstrates the uncommon platform on which men and women stand in Muslim law. This concept was that a woman who contracts herself to marriage with a man of unequal status without the consent of any of her male relations would render such a marriage violable and rescindable by the Court.</p>
+                  </div>
+               </div>
+            </div>
+            <div id="div3" class="panel panel-default" >
+               <div class="panel-heading" role="tab" id="headingFour">
+                  <h4 class="panel-title">
+                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
+                        <p id="class3" style="color:black">Right of Women in Divorce</p>
+                     </a>
+                  </h4>
+               </div>
+               <div aria-expanded="false" id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                     <p class="details" id="details3"> In talaq-i-tafweez or delegated divorce the wife may divorce her husband subject to satisfaction of some conditions. It has been stated earlier that the husband may delegate his authority of divorce to the wife. Under this delegated authority the wife can free herself from the marital tie by way of divorce on some specific grounds. The wife will have to prove failure of the husband to perform his marital obligations. Therefore, it is not an absolute authority of the wife to dissolve the marital tie as the husband does.It is noteworthy that in all forms of talaq, discussed above, husband has got exclusive authority, except        in Khula and Mubaraat divorce, to repudiate the marital tie. In addition, consent of the wife is immaterial under these forms oftalaq which, Huda has revealed, might be extra judicial and might go beyond any external check. There is no debate or confusion too regarding unilateral authority of the husband to divorce his wife under classical Muslim law. Though the wife can repudiate the marital tie in some cases, of course not unilaterally but with the consent or under the authority of the husband, it is not frequently used by women due to economic and socio-cultural factors. It is interesting to mention here that contracting marriage under classical Hanafi law needs witnesses while dissolving the same requires no witnesses at all.</p>
+                  </div>
+               </div>
+            </div>
+            <div id="div2" class="panel panel-default" >
+               <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                        <p id="class4" style="color:black">Women’s Right to Inheritance</p>
+                     </a>
+                  </h4>
+               </div>
+               <div aria-expanded="false" id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                     <p class="details" id="details4">In Islamic inheritance law of whether a male always inherits a share that is twice that of a female of equal class presents an interesting case in which male interpreters of the Qur’an may have been willing to stretch even the words of the Qur’an itself to favor their gender. The Qur’anic verse states that “[t]he male shall have the equal of the portion of two females. . . .” Yet a literal reading of the separate verse that specifies heirs’ fractional shares is not consistent in some cases with the double share requirement. For example, if a decedent is survived by his wife and parents, the wife should receive one-fourth of his estate, the mother one-third and the father the remaining five-twelfths. Worrying that the father does not receive double of what the mother receives, the legal scholars determined that the mother was not to receive one-third of the estate but rather one-third of what remains in the estate after the wife receives her share. Under this interpretation, then, the wife would take one-fourth, the mother would take one-fourth also (one-third of the remaining three-fourths), and the father would take the remaining one-half of the estate, thus securing his double portion.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+               <div id="div1" class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                     <h4 class="panel-title">
+                        <a  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                           <p id="class1" style="color:black">Husband’s Right to Wife’s Estate </p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div style="height: 0px;" aria-expanded="false" id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                     <div class="panel-body">
+                        <p class="details" id="details1"> Islamic law provides both the husband and the wife with a definite portion of each other’s estates and then divides the rest of the estate among other relatives of the deceased spouse. The husband’s share in the wife’s estate is expressly delineated in the Qur’an. Under the Sunni system, if the wife is survived by one or more agnatic lineal descendants, the husband is entitled to one-fourth of her estate If the wife is not survived by any children or agnatic lineal descendants, the husband takes one-half of her estate. The remaining estate is then divided, under the Sunni approach, among her agnatic lineal descendants or, if none, the wife’s other relatives. (Her husband is not deemed to be her “relative.”) It is important to note, however, that the husband’s share of the estate is specifically limited by the Qur’an to his prescribed portion after payment of any legacies or debts.</p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div2" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                           <p id="class2" style="color:black">Wife’s Right to Husband’s Estate</p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                        <p class="details" id="details2">Under Islamic law, the widow has a right to her deferred mehr [21]and also to her Qur’anic share of her husband’s estate. The prescribed amount is basically one-half of the amount to which the husband is entitled if the wife were to die first. If the husband left agnatic lineal descendants, the widow’s share is one-eighth of his estate.[22] Her share is one-fourth of the estate in the absence of lineal descendants. If there is more than one widow, however, the widows must share that amount equally among themselves. The wife, like the husband, will never take more than the prescribed share. Also, as with husbands, the Qur’an specifically states that the surviving wife’s share is a share only of the net estate.</p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div2" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                           <p id="class2" style="color:black">Daughters</p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                        <p class="details" id="details2">Both the Sunni and the Shi’a systems list the daughter as a named taker with a prescribed share of the estate. Thus, a daughter will never be excluded from sharing in the parent’s estate.[23] The amount of the Qur’anic share of a daughter depends upon whether the deceased parent is survived by sons or other daughters. If the decedent is survived by sons as well as one or more daughters, the daughters and sons share the residue of the estate but each daughter takes one-half of a son’s share. If there is no son and the decedent is survived by only one daughter, she takes one-half of theestate. If there are no sons but more than one daughter, the surviving daughters share two-thirds of the estate equally among themselves.[24]                                                               </p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div2" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                           <p id="class2" style="color:black">Mother</p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                        <p class="details" id="details2">Mothers are among those takers who are specified in the Qur’an.[25] If the decedent dies and is not survived by any children or son’s children, and is survived by only one sibling, if any, the decedent’s mother’s share is one-third of the estate. If the decedent in this case is survived by two or more siblings, the mother’s share is one-sixth. If the decedent is survived by one or more children or son’s children, the mother also takes one-sixth of the estate.                                                                                                                                                                                            </p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div3" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingFour">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseFour">
+                           <p id="class3" style="color:black">Right of Women in Divorce</p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                     <div class="panel-body">
+                        <p class="details" id="details3"> In talaq-i-tafweez or delegated divorce the wife may divorce her husband subject to satisfaction of some conditions. It has been stated earlier that the husband may delegate his authority of divorce to the wife. Under this delegated authority the wife can free herself from the marital tie by way of divorce on some specific grounds. The wife will have to prove failure of the husband to perform his marital obligations. Therefore, it is not an absolute authority of the wife to dissolve the marital tie as the husband does.It is noteworthy that in all forms of talaq, discussed above, husband has got exclusive authority, except in Khula and Mubaraat divorce, to repudiate the marital tie. In addition, consent of the wife is immaterial under these forms oftalaq which, Huda has revealed, might be extra judicial and might go beyond any external check. There is no debate or confusion too regarding unilateral authority of the husband to divorce his wife under classical Muslim law. Though the wife can repudiate the marital tie in some cases, of course not unilaterally but with the consent or under the authority of the husband, it is not frequently used by women due to economic and socio-cultural factors. It is interesting to mention here that contracting marriage under classical Hanafi law needs witnesses while dissolving the same requires no witnesses at all.</p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div2" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
+                           <p id="class4" style="color:black">Women’s Right to Inheritance</p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                        <p class="details" id="details4">In Islamic inheritance law of whether a male always inherits a share that is twice that of a female of equal class presents an interesting case in which male interpreters of the Qur’an may have been willing to stretch even the words of the Qur’an itself to favor their gender. The Qur’anic verse states that “[t]he male shall have the equal of the portion of two females. . . .” Yet a literal reading of the separate verse that specifies heirs’ fractional shares is not consistent in some cases with the double share requirement. For example, if a decedent is survived by his wife and parents, the wife should receive one-fourth of his estate, the mother one-third and the father the remaining five-twelfths. Worrying that the father does not receive double of what the mother receives, the legal scholars determined that the mother was not to receive one-third of the estate but rather one-third of what remains in the estate after the wife receives her share. Under this interpretation, then, the wife would take one-fourth, the mother would take one-fourth also (one-third of the remaining three-fourths), and the father would take the remaining one-half of the estate, thus securing his double portion.</p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div2" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
+                           <p id="class4" style="color:black">Mother’s right to custody of her child </p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                        <p class="details" id="details4">The mother, whether she is separated or not, has the first claim to get the custody of an infant. If a mother is unable or unwilling to take custody, the general principle is that a close female relative of hers, .e.g. mother’s mother will take charge of the infant. There are differences of opinion regarding the duration of a mother’s right to custody. The prevailing opinion under the classical Hanafi school is that a mother retains the right of custody until seven years of age if the child is male and until nine years of age if the child is female. And that duration of custody in the Maliki school is the age of puberty in case of a boy and till marriage in case of a girl while in the Hanbali school it is seven years for both boys and girls.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div id="div2" class="panel panel-default" >
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                     <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsetwelve" aria-expanded="false" aria-controls="collapseTwo">
+                           <p id="class4" style="color:black">Women’s right to Maintenance</p>
+                        </a>
+                     </h4>
+                  </div>
+                  <div aria-expanded="false" id="collapsetwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                     <div class="panel-body">
+                        <p class="details" id="details4">husband is bound to maintain his wife (unless she is too young for matrimonial intercourse) so long as she is faithful to him and obey his reasonable orders. But he is not bound to maintain her who refuses herself to him[31] or is otherwise disobedient. Unless the refusal or disobedient is justified of non payment of prompt dower.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

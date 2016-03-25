@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scriptu.js"></script>
+  
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="img/icon.ico" alt="Mountain View" style="width:60px;height:40px; margin:0px; padding-bottom:10px;padding-top:2px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+     <li class="active"><a href="index.html">Law relating to women’s right</a></li>
+        <li class=""><a href="index1.html">Women’s Right under Muslim Law</a></li>
+	
+        <li class=""><a href="index2.html">Women’s Right under Hindu Law</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+			<div id="routine" class="container-fluid">
+				<div class="row txt-center">
+                    <h3 id="dayname" class="column-title">Right of Women under Hindu Law </h3>
+					
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div id="div1" class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                       <b id="class1" style="color:black">Women’s right in marriage </b>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div style="height: 0px;" aria-expanded="false" id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                   <p class="details" id="details1"> According to Hindu social customs, Hindu marriages are solemnized through religious rituals. There is no marriage registration system for Hindus in Bangladesh. There is also no Hindu marriage law or Hindu marriage registrar in the country. So, if any Hindu woman suffers in the hands of her in-laws, she does not get legal help.
+In Bangladesh, Hindu marriages differ from caste to caste. The Hindu marriage rituals have often no lawful ground. So, when the Hindu women want to come out of bad marriages they are in trouble because there is no marriage registration system in the Hindu society in Bangladesh.
+</p>
+                                </div>
+                            </div>
+                        </div>
+						
+						
+                        <div id="div2" class="panel panel-default" >
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <b id="class2" style="color:black">Right of women in divorce </b>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-expanded="false" id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                   <p class="details" id="details2">divorce is not recognized under the orthodox Hindu Law. Manu believed that the duty of a wife continues even after death. She can never have a second husband. The reason is that a marriage from the Hindu point of view creates an indissoluble tie between husband and wife. Unless divorce is allowed by the custom neither party to a marriage can divorce the other party. However, through the passing of Hindu Marriage Act 1955 in Indiasome revolutionary changes have been introduced regarding marriage and divorce. After the passing of the Act the idea of marriage as an indissoluble union has been abolished and it is almost converted to a civil contract just like Muslim Law. The option of Divorce is the most significant part of this Act. Section 13(1) declares the right of divorce to both the parties.</p>
+								</div>
+                            </div>
+                        </div>
+                  
+						<div id="div3" class="panel panel-default" >
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                       <b id="class3" style="color:black">Women’s right to adoption</b>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-expanded="false" id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                   <p class="details" id="details3"> Adoption is the transplantation of a son from the family in which he is born to another family where he is given by the natural parents by way of gift. The power of a Hindu female to adopt a son is very much restricted in Bangladesh. She can't adopt by herself but only with the consent of her husband. She has no right herself, she is deemed to act merely as an agent, or representative of her husband. A wife can but no other female can adopt. However, in India a woman enjoys a lot of rights conferred by the Hindu Adoption & Maintenance Act 1956. The Act has made the following changes in the law relating to adoption:
+1. A female may also be adopted
+2. A virgin, divorcee, or widow is entitled to adopt and wife can also adopt in certain circumstances. 
+3. A male can adopt only with the consent of wife or wives, if any. 
+4. The father without the consent of mother can't give a child in adoption except in certain circumstances.
+5. The ceremony of “Datta Homam” is not essential.
+</p>
+				</div>
+                            </div>
+                        </div>
+
+<div id="div2" class="panel panel-default" >
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                        <b id="class4" style="color:black">Women’s right to inheritance </b>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-expanded="false" id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                   <p class="details" id="details4"> According to Bangladesh Law Hindu women only get a limited share. They inherit life interest in the property. There are five female Sapindas according to the Dayabagha law, namely the widow, the daughter, the mother, the father's mother and the mother of father's father. No other female relation is recognised as heir by the said school. Moreover a daughter cannot receive any property; even she cannot get life interest in the presence of son, grand son and great grand son. Although in neighboring India laws in this regard have been updated since independence in 1947, in Bangladesh the pre-1947 laws are still prevailing. In India laws have been framed and amended that has established women's rights on the property of father and husband.   </p>
+				</div>
+                            </div>
+                        </div>
+
+<div id="div2" class="panel panel-default" >
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                                        <b id="class4" style="color:black">Stridhana</b>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-expanded="false" id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                   <p class="details" id="details4"> Stridhana means a particular property a women may have a limited or an absolute interest. Stridhana belonging to a woman of which she is the absolute owner she may dispose of this property without the consent of her husband and without the consent of any one during the maidenhood or widowhood. Stridhana of every description passes on her death to her heirs and not to the heirs of the person from whom such property was acquired.  
+</p>
+				</div>
+                            </div>
+                        </div>
+<div id="div2" class="panel panel-default" >
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                                        <b id="class4" style="color:black">Women’s right to maintenance</b>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div aria-expanded="false" id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                   <p class="details" id="details4">Generally a Hindu wife with her husband and the husband is bound to maintain her and she must discharge her duties towards her husband. But if she leaves him for own accord, either without cause or on account of such ordinary quarrels as are incidental to married life, she can set up no claim to separate residence and maintenance.</br></br>“The Hindu Women’s Right to Separate Residence and Maintenance Act” – 1946, says that, notwithstanding any custom and law of a woman is entitle to have maintenance and separate residence from her husband-</br></br>
+i. If he is suffering from certain loathsome diseases.</br>
+ii. If he is abandoned her.</br>
+iii. If he has married another woman.</br>
+iv. If he is converted to another religion.</br>
+v. If he is cruel to the wife</br>
+vi. If he keeps concubine</br>
+<b>However a woman can not claim maintenance if-</b></br>
+i. She is guilty of unchastity</br>
+ii. She convert to another religion</br>
+iii. She refuse to go back to her husband without any justified cause</br>
+iv. She has re-married to another person.</br>
+</p>
+				</div>
+                            </div>
+                        </div>
+
+
+
+						
+                    </div>
+                </div>
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			
+  
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

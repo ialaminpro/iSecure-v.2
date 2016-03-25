@@ -20,12 +20,13 @@ public class startwebview extends Activity {
 
         if(sdkVersion>20){
 
+            finish();
             Intent intent = new Intent(this,Forum_view.class);
             startActivity(intent);
         }
         else{
 
-
+            finish();
             Intent intent = new Intent(this,MyWb.class);
             startActivity(intent);
 

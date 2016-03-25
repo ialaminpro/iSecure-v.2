@@ -11,17 +11,10 @@
             android:icon="@drawable/ic_menu_share"
             android:title="@string/Community" />
         <item
-            android:id="@+id/Womens_Right"
+            android:id="@+id/laws_rights"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/Womens_Right" />
-        <item
-            android:id="@+id/Womens_laws"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/Womens_laws" />
-        <item
-            android:id="@+id/Cyber_laws"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/Cyber_laws" />
+            android:title="@string/laws_right" />
+
         <item
             android:id="@+id/onAirhelp"
             android:icon="@drawable/ic_menu_slideshow"

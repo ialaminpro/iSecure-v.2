@@ -1,7 +1,6 @@
 package com.thealamin.isecure;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -46,6 +45,7 @@ public class MyWb extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
+
 
         web = (WebView) findViewById(R.id.webView);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -129,24 +129,6 @@ public class MyWb extends Activity {
 
     }
 
-    @Override
-    public void onBackPressed() {
-        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }*/
-        backButtonHandler();
-    }
-
-    public void backButtonHandler() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
-                MyWb.this);
-        startActivity(new Intent(MyWb.this, MainActivity.class));
-
-
-    }
 
     public void refresh(View view){
 
@@ -205,4 +187,6 @@ public boolean onKeyDown(int keyCode, KeyEvent event)
     }
     return super.onKeyDown(keyCode, event);
 }*/
+
+
 }

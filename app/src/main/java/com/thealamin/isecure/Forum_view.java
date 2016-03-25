@@ -18,14 +18,11 @@ package com.thealamin.isecure;
  * limitations under the License.
  */
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
 
-public class Forum_view extends Activity {
+public class Forum_view extends Nav {
 
     private static final String TAG = Forum_view.class.getSimpleName();
 
@@ -42,25 +39,6 @@ public class Forum_view extends Activity {
                     .commit();
         }
     }
-    @Override
-    public void onBackPressed() {
-        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }*/
-        backButtonHandler();
-    }
-
-    public void backButtonHandler() {
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
-                Forum_view.this);
-        startActivity(new Intent(Forum_view.this, MainActivity.class));
-
-
-    }
-
 
 
 }

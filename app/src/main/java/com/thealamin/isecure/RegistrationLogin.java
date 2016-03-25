@@ -89,7 +89,7 @@ public class RegistrationLogin extends AppCompatActivity {
 
         com.android.volley.RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
 
-        String url = "http://thealamin.com/dbtest/login.php";
+        String url = "http://thealamin.com/isecure_forum/applogin.php";
 
         email = etEmail.getText().toString();
         password = etPassword.getText().toString();

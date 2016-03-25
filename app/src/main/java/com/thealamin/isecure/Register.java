@@ -106,7 +106,7 @@ public class Register extends Activity {
 
         com.android.volley.RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
 
-        String url = "http://thealamin.com/dbtest/reg.php";
+        String url = "http://thealamin.com/isecure_forum/reg.php";
         firstName = etFirstName.getText().toString();
 
         email = etEmail.getText().toString();

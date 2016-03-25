@@ -153,7 +153,7 @@ public class Sms extends Activity {
             Toast.makeText(getApplicationContext(), "SMS faild, please try again.", Toast.LENGTH_LONG).show();
             e.printStackTrace();
             finish();
-         //   startActivity(new Intent(Sms.this, MainActivity.class));
+         // hyni    startActivity(new Intent(Sms.this, MainActivity.class));
         }
     }
 }

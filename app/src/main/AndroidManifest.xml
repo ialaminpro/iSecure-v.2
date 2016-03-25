@@ -49,6 +49,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:noHistory="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
             <intent-filter>
@@ -58,10 +59,19 @@
             </intent-filter>
 
         </activity>
+        <activity
+            android:name=".RightsandLaws"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+        </activity>
 
 
         <activity android:name=".PoliceRabMedia"
-            android:parentActivityName=".MainActivity">
+            >
 
         </activity>
 
