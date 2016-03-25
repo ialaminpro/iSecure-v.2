@@ -3,7 +3,6 @@ package com.thealamin.isecure;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
@@ -40,16 +39,26 @@ public class AboutUs extends Nav{
 
     }
 
-
-    @Override
+/*    @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        *//*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-        }
+        }*//*
+        backButtonHandler();
     }
+
+    public void backButtonHandler() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                AboutUs.this);
+        startActivity(new Intent(AboutUs.this, MainActivity.class));
+
+
+    }*/
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

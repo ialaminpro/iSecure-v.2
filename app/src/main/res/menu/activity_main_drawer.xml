@@ -6,7 +6,10 @@
             android:id="@+id/Emergency_service"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/Emergency_service" />
-
+        <item
+            android:id="@+id/Community_view"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/Community" />
         <item
             android:id="@+id/Womens_Right"
             android:icon="@drawable/ic_menu_slideshow"
@@ -34,33 +37,14 @@
     <item android:title="@string/Emergency_Number">
         <menu>
             <item
-                android:id="@+id/police"
+                android:id="@+id/legal_assistance"
                 android:icon="@drawable/ic_menu_share"
-                android:title="@string/police_number" />
+                android:title="@string/legal_assistance" />
             <item
-                android:id="@+id/Advocate"
+                android:id="@+id/other"
                 android:icon="@drawable/ic_menu_share"
-                android:title="@string/advocate" />
-            <item
-                android:id="@+id/womens_organization"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/womens_organization" />
-            <item
-                android:id="@+id/Ambulance"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/Ambulence" />
-            <item
-                android:id="@+id/fire_service"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/fire_service" />
-            <item
-                android:id="@+id/minster_office"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/Minster_office" />
-            <item
-                android:id="@+id/media"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/media" />
+                android:title="@string/other" />
+
         </menu>
     </item>
     <!--24/03/2016-->
@@ -123,10 +107,7 @@
 
     <item android:title="@string/Community">
         <menu>
-            <item
-                android:id="@+id/Community_view"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/Community" />
+
             <item
                 android:id="@+id/Chat_Room"
                 android:icon="@drawable/ic_menu_share"

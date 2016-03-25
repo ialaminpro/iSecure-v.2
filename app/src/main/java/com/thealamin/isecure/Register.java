@@ -83,6 +83,24 @@ public class Register extends Activity {
 }
 
 
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        android.app.AlertDialog.Builder alertDialog = new android.app.AlertDialog.Builder(
+                Register.this);
+        startActivity(new Intent(Register.this, MainActivity.class));
+
+
+    }
 
     public  void  doPostRequest() {
 

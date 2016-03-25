@@ -1,6 +1,8 @@
 package com.thealamin.isecure;
 
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
@@ -12,23 +14,31 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+import java.util.Set;
+import java.util.Iterator;
+
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.Circle;
-import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.util.Locale;
+import java.util.Map;
 
 public class MapsActivity extends Nav implements OnMapReadyCallback {
 
@@ -135,21 +145,30 @@ public class MapsActivity extends Nav implements OnMapReadyCallback {
 
 
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                MapsActivity.this);
+        startActivity(new Intent(MapsActivity.this, MainActivity.class));
+
+
     }
 
     @Override
@@ -176,7 +195,7 @@ public class MapsActivity extends Nav implements OnMapReadyCallback {
      * Stores activity data in the Bundle.
      */
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putBoolean(REQUESTING_LOCATION_UPDATES_KEY, mRequestingLocationUpdates);
+        //savedInstanceState.putBoolean(REQUESTING_LOCATION_UPDATES_KEY, mRequestingLocationUpdates);
         savedInstanceState.putParcelable(LOCATION_KEY, mCurrentLocation);
         savedInstanceState.putString(LAST_UPDATED_TIME_STRING_KEY, mLastUpdateTime);
         super.onSaveInstanceState(savedInstanceState);
@@ -193,17 +212,97 @@ public class MapsActivity extends Nav implements OnMapReadyCallback {
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings();
 
-        // Instantiates a new CircleOptions object and defines the center and radius
+     /*   // Instantiates a new CircleOptions object and defines the center and radius
         CircleOptions circleOptions = new CircleOptions()
                 .center(new LatLng(23.754955, 90.376504))
-                .radius(1000); // In meters
+                .radius(1000); // In meters*/
 
-// Get back the mutable Circle
-        Circle circle = mMap.addCircle(circleOptions);
+// Nearest area start
+
+        double x1=gps.getLatitude(),y1=gps.getLongitude(),x,y,z,w;
+        double x2[] = {23.745572,23.743205,23.736491,23.733149,23.716816,23.707333,23.734797,23.718635,23.702426,23.724957,23.691827,23.710431,23.730024,23.741897,23.751009,23.736112,23.866945,23.850321,23.889224,23.871048,23.859701,23.791270,23.824612,23.771479,23.828152,23.761319,23.765381,23.755701,23.771186,23.804345,23.826101,23.801352,23.805457,-123456789};
+        double y2[] = {90.404612,90.381611,90.395725,90.386807,90.382251,90.409203,90.365236,90.365681,90.418255,90.494755,90.431401,90.435549,90.417339,90.428153,90.425211,90.416126,90.400612,90.409117,90.370925,90.432698,90.426182,90.415468,90.405555,90.427392,90.419540,90.389476,90.400640,90.363906,90.359425,90.363140,90.366508,90.381521,90.348875,-123456789};
+        String c[] = {"Ramana","Dhanmondi","Sahabag","New Market","Lalbag","Kotwali"," Hajaribag","Kamarangiracar","Sutrapur","Demra","Syamapur","Jatrabari","Motijheel","Sabujbag"," Khilgaon","Paltan","Uttara","Airport","Turag","Uttarkhan","Daksinakhan","Gulshan","Dhaka Cantonment","Badda","Khilkhet","Tejgaon","Tejgaon Industrial Area","Mohammadapur","Adabar","Mirpur","Pallabi","Kafrul","Shah Ali","END"};
+
+
+        String s[]  = new String[100];
+        double res[] = new double[100];
+
+        //Arrays.fill(res, 987654321);
+
+        for(int i=0;x2[i]!=-123456789;i++){
+            x=((x2[i]-x1)*(x2[i]-x1));
+            y=((y2[i]-y1)*(y2[i]-y1));
+            z =(111.2*x)+(111*y);
+            w=Math.sqrt(z);
+            res[i]= w;
+            s[i]=c[i];
+        }
 
 
 
-        Polygon polygon = mMap.addPolygon(new PolygonOptions()
+
+        HashMap<Double, String> hmap = new HashMap<Double, String>();
+
+
+
+        for(int i=0;i<c.length;i++){
+            hmap.put(res[i],s[i]);
+        }
+
+
+
+        Map<Double, String> map = new TreeMap<Double, String>(hmap);
+
+        System.out.println("\n");
+
+        Set<Entry<Double, String>> set2 = map.entrySet();
+
+        Iterator<Entry<Double, String>> iterator2 = set2.iterator();
+        int j=0;
+        double lan=0,lon=0;
+        int plug=0;
+        while(iterator2.hasNext()) {
+
+            Map.Entry<Double, String> me2 = iterator2.next();
+
+
+            for(int i=0;x2[i]!=-123456789;i++)
+            {
+                if(c[i].equals(me2.getValue()))
+                {
+                    plug ++;
+                    if(plug == 1) {
+                        lan += x2[i];
+                        lon += y2[i];
+                    }
+
+                    System.out.print (x2[i]+","+y2[i]+" ");
+                    System.out.println(me2.getValue());
+                }
+            }
+            j++;
+
+        }
+
+
+// Nearest Area end
+
+
+        Polyline line1 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(gps.getLatitude(), gps.getLongitude()), new LatLng(lan, lon))
+                .width(5)
+                .color(0xFFFF0000)); //non transparent red
+
+       /* Polyline line2 = mMap.addPolyline(new PolylineOptions()
+                .add(new LatLng(23.745572, 90.404612), new LatLng(23.736491, 90.395725))
+                .width(5)
+                .color(0x7F0000FF)); //semi-tra
+*/
+
+
+
+       /* Polygon polygon = mMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(0, 0), new LatLng(0, 5), new LatLng(3, 5), new LatLng(0, 0))
                 .strokeColor(Color.RED)
                 .fillColor(Color.BLUE));
@@ -211,7 +310,7 @@ public class MapsActivity extends Nav implements OnMapReadyCallback {
         Polygon polygon1 = mMap.addPolygon(new PolygonOptions()
                 .add(new LatLng(0, 0), new LatLng(0, 5), new LatLng(3, 5))
                 .strokeColor(Color.RED)
-                .fillColor(Color.BLUE));
+                .fillColor(Color.BLUE));*/
 
         GoogleMapOptions options = new GoogleMapOptions();
 

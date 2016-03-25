@@ -142,6 +142,24 @@ public class RegistrationLogin extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        android.app.AlertDialog.Builder alertDialog = new android.app.AlertDialog.Builder(
+                RegistrationLogin.this);
+        startActivity(new Intent(RegistrationLogin.this, MainActivity.class));
+
+
+    }
 
     public AlertDialog onCreateDialogSingleChoice(final EditText editText,String title, final CharSequence[] array) {
         clicked = array[0].toString();

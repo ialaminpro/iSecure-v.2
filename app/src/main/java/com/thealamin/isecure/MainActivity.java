@@ -1,26 +1,34 @@
 package com.thealamin.isecure;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
+import java.io.IOException;
 import java.util.Locale;
 
 public class MainActivity extends Nav{
+
     ImageButton bta, btcall, btvr, btsms, bte, btv, btg,btdog;
 
     Locale myLocale;
     // TextView username_to_show;
+
+    private MediaRecorder myAudioRecorder;
+
+    private String outputFile = null;
 
 
 
@@ -28,13 +36,13 @@ public class MainActivity extends Nav{
     int flug = 0;
     int flug_dog = 0;
     public MediaPlayer mp1;
+    public int Activeall=0,destroy=0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
-
-
         mp1 = MediaPlayer.create(MainActivity.this,R.raw.dogwhistle2);
 
 
@@ -85,6 +93,17 @@ public class MainActivity extends Nav{
         bte = (ImageButton) findViewById(R.id.police);
         btv = (ImageButton) findViewById(R.id.video);
         btg = (ImageButton) findViewById(R.id.cameraPic);
+
+
+        outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";;
+
+        myAudioRecorder=new MediaRecorder();
+        myAudioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        myAudioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        myAudioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+        myAudioRecorder.setOutputFile(outputFile);
+
+
 
         btdog.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,11 +178,17 @@ public class MainActivity extends Nav{
             }
         });
 
+
+
+
+
+
         bta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if( v.getId() == R.id.Emergency && flug==0){
 
+                if (v.getId() == R.id.Emergency && flug == 0 && Activeall == 0) {
+                    Activeall++;
 
                     btcall.setVisibility(View.VISIBLE);
 
@@ -172,11 +197,10 @@ public class MainActivity extends Nav{
                     bte.setVisibility(View.VISIBLE);
                     btv.setVisibility(View.VISIBLE);
                     btg.setVisibility(View.VISIBLE);
-                    flug=1;
+                    flug = 1;
 
-                }
-                else if( v.getId() == R.id.Emergency && flug==1){
-
+                } else if (v.getId() == R.id.Emergency && flug == 1 && Activeall == 1) {
+                    Activeall++;
 
                     btcall.setVisibility(View.INVISIBLE);
                     btvr.setVisibility(View.INVISIBLE);
@@ -184,11 +208,114 @@ public class MainActivity extends Nav{
                     bte.setVisibility(View.INVISIBLE);
                     btv.setVisibility(View.INVISIBLE);
                     btg.setVisibility(View.INVISIBLE);
-                    flug=0;
+                    flug = 0;
+
+                } else if (destroy == 1) {
+                    destroy=0;
+                    myAudioRecorder.stop();
+                    myAudioRecorder.release();
+                    myAudioRecorder = null;
+
+                    Toast.makeText(getApplicationContext(), "Audio recorded successfully", Toast.LENGTH_LONG).show();
+                } else if (Activeall == 2) {
+                    Activeall = 0;
+                    AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                            MainActivity.this);
+                    // Setting Dialog Title
+                    alertDialog.setTitle("Warning!!!");
+                    // Setting Dialog Message
+                    alertDialog.setMessage("Please Read Becarefully:\nIf you press YES! It will do all those action\n1. Send SMS & Call to nearest Police Station\n2. Voice Record\n ");
+                    // Setting Icon to Dialog
+                    alertDialog.setIcon(R.drawable.dialog_icon);
+                    // Setting Positive "Yes" Button
+                    alertDialog.setPositiveButton("YES",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                    destroy = 1;
+                                    /******************** Start Voice Record ************************/
+                                    outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/recording.3gp";
+                                    ;
+
+                                    myAudioRecorder = new MediaRecorder();
+                                    myAudioRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+                                    myAudioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+                                    myAudioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+                                    myAudioRecorder.setOutputFile(outputFile);
+
+
+                                    try {
+                                        myAudioRecorder.prepare();
+                                        myAudioRecorder.start();
+                                    } catch (IllegalStateException e) {
+                                        // TODO Auto-generated catch block
+                                        e.printStackTrace();
+                                    } catch (IOException e) {
+                                        // TODO Auto-generated catch block
+                                        e.printStackTrace();
+                                    }
+
+
+                                    Toast.makeText(getApplicationContext(), "Recording started", Toast.LENGTH_LONG).show();
+
+                                    /******************** End Voice Record ************************/
+                                }
+                            });
+                    // Setting Negative "NO" Button
+                    alertDialog.setNegativeButton("NO",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // Write your code here to invoke NO event
+                                    dialog.cancel();
+                                }
+                            });
+                    // Showing Alert Message
+                    alertDialog.show();
 
                 }
             }
         });
+    }
+
+
+
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                MainActivity.this);
+        // Setting Dialog Title
+        alertDialog.setTitle("Leave application?");
+        // Setting Dialog Message
+        alertDialog.setMessage("Are you sure you want to leave the application?");
+        // Setting Icon to Dialog
+        alertDialog.setIcon(R.drawable.dialog_icon);
+        // Setting Positive "Yes" Button
+        alertDialog.setPositiveButton("YES",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+        // Setting Negative "NO" Button
+        alertDialog.setNegativeButton("NO",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Write your code here to invoke NO event
+                        dialog.cancel();
+                    }
+                });
+        // Showing Alert Message
+        alertDialog.show();
     }
 
     public void voicerecord_exit(View view){
@@ -201,38 +328,9 @@ public class MainActivity extends Nav{
 
 
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
 
-        return super.onOptionsItemSelected(item);
-    }
+
 
 
 

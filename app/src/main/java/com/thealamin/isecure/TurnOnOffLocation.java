@@ -1,6 +1,8 @@
 package com.thealamin.isecure;
 
 import android.Manifest;
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
@@ -147,6 +149,26 @@ public class TurnOnOffLocation extends FragmentActivity implements
 
 
       //  startUpdatesButtonHandler( );
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                TurnOnOffLocation.this);
+        startActivity(new Intent(TurnOnOffLocation.this, MainActivity.class));
+
+
     }
 
     /**

@@ -5,6 +5,7 @@ package com.thealamin.isecure;
  */
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -79,6 +80,24 @@ public class Videorecord extends Activity {
             // will close the app if the device does't have camera
             finish();
         }
+    }
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                Videorecord.this);
+        startActivity(new Intent(Videorecord.this, MainActivity.class));
+
+
     }
 
     /**

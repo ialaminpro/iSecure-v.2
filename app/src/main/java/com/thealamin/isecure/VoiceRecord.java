@@ -5,6 +5,8 @@ package com.thealamin.isecure;
  */
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
@@ -41,6 +43,8 @@ public class VoiceRecord extends Activity {
         myAudioRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         myAudioRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
         myAudioRecorder.setOutputFile(outputFile);
+
+
 
         record.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +110,50 @@ public class VoiceRecord extends Activity {
                 Toast.makeText(getApplicationContext(), "Playing audio", Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public void voiceRecord()
+    {
+        try {
+            myAudioRecorder.prepare();
+            myAudioRecorder.start();
+        }
+
+        catch (IllegalStateException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        record.setEnabled(false);
+        stop.setEnabled(true);
+
+        Toast.makeText(getApplicationContext(), "Recording started", Toast.LENGTH_LONG).show();
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        /*DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }*/
+        backButtonHandler();
+    }
+
+    public void backButtonHandler() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(
+                VoiceRecord.this);
+        startActivity(new Intent(VoiceRecord.this, MainActivity.class));
+
+
     }
 
     @Override

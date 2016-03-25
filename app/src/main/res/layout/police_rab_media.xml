@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PoliceRabMedia">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tabStripEnabled="false"
+                android:touchscreenBlocksFocus="false"
+                android:transitionGroup="false"
+                android:nestedScrollingEnabled="true"
+                android:background="#f31b30d1">
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:orientation="vertical"
+                    tools:context="com.istiyakhossain.listview.MainActivity">
+
+                    <!-- Editext for Search -->
+                    <EditText android:id="@+id/inputSearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Search your places here..."
+                        android:inputType="textVisiblePassword"/>
+
+                    <!-- List View -->
+                    <ListView
+                        android:id="@+id/list_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:orientation="vertical"
+                    tools:context="com.istiyakhossain.listview.MainActivity">
+
+                    <!-- Editext for Search -->
+                    <EditText android:id="@+id/inputSearch2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Search your places here..."
+                        android:inputType="textVisiblePassword"/>
+
+                    <!-- List View -->
+                    <ListView
+                        android:id="@+id/list_view2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp" />
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:orientation="vertical"
+                    tools:context="com.istiyakhossain.listview.MainActivity">
+
+                    <!-- Editext for Search -->
+                    <EditText android:id="@+id/inputSearch3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Search your places here..."
+                        android:inputType="textVisiblePassword"/>
+
+                    <!-- List View -->
+                    <ListView
+                        android:id="@+id/list_view3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:orientation="vertical"
+                    tools:context="com.istiyakhossain.listview.MainActivity">
+
+                    <!-- Editext for Search -->
+                    <EditText android:id="@+id/inputSearch4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Search your places here..."
+                        android:inputType="textVisiblePassword"/>
+
+                    <!-- List View -->
+                    <ListView
+                        android:id="@+id/list_view4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp" />
+
+                </RelativeLayout>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
